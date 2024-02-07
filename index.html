@@ -17,6 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico" type="image/x-icon">
     <!-- main style -->
     <link rel="stylesheet" href="./src/styles/main.css">
 
@@ -24,6 +26,9 @@
 </head>
 
 <body>
+    <audio id="bgm" loop>
+        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3">
+    </audio>
     <div class="bg-video">
         <video class="video" autoplay loop muted>
             <source src="./src/assets/video/yugi.mp4" type="video/mp4">
@@ -41,8 +46,8 @@
                 <img id="card-image">
             </div>
             <div class="card_details frame">
-                <p id="card-name">a</p>
-                <p id="card-type">a</p>
+                <p id="card-name">Selecione</p>
+                <p id="card-type">uma carta</p>
             </div>
         </div>
 
@@ -51,7 +56,7 @@
                 <div class="card-box framed" id="computer-cards">
 
                 </div>
-                <div class="card-versus__container">
+                <div class="card-versus__container debug">
                     <div class="versus-top">
                         <div class="card-infield">
                             <img id="player-field-card" height="180px" width="125px">
